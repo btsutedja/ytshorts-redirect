@@ -11,12 +11,15 @@
         "https://www.youtube.com/*"
     ],
     "declarative_net_request": {
-        "rule_resources": [
-            {
+        "rule_resources": [{
                 "id": "1",
                 "enabled": true,
                 "path": "rules.json"
-            }
-        ]
-    }
+            }]
+    },
+    "content_scripts": [{
+          "matches": ["https://www.youtube.com/*"],
+          "js": ["content-script.js"],
+          "run_at": "document_start"
+        }]
 }
