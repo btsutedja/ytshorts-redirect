@@ -5,11 +5,9 @@
     "manifest_version": 3,
     "permissions": [
         "declarativeNetRequest",
-        "declarativeNetRequestFeedback",
-        "webRequest"
+        "declarativeNetRequestFeedback"
     ],
     "host_permissions": [
-        "https://www.youtube.com/shorts/*",
         "https://www.youtube.com/*"
     ],
     "declarative_net_request": {
